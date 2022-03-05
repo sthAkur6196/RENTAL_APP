@@ -1,0 +1,17 @@
+.explorePage__info{
+    padding: 15px;
+    padding-bottom: 0px;
+}
+.explorePage__info > h2{
+    font-size: 27px;
+    font-weight: 460;
+}
+.explore__dropdown{
+    margin-left: 1em;
+    margin-top: 0.8em;
+}
+.explore__dropdown > select{
+    padding: 0.3em;
+    border-radius: 1em;
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(14, 14, 14);
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
+div.main-div{
+    border: 2px solid white;
+    border-radius: 10px;
+    max-width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vw;
+    padding: 4vw;
+    padding-bottom: 20vw;
+}
+div.list-div{
+    text-align: left;
+    margin-left: 14%;
+    margin-top: 3vw;
+}
+div.list-div > div.form-div{
+    text-align: left;
+    margin-left:0%;
+    width: 85%;
+    margin-top: 3vw;
+}
+
+div > h3{
+    font-size: 3.6vw;
+    font-family: 'Courier New';
+    margin-bottom: 3vw;
+}

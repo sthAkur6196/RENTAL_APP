@@ -1,0 +1,83 @@
+.main__section{
+    padding: 10px;
+}
+.navigation__section > p{
+    font-size: 0.9em;
+}
+.title__section{
+    position: relative;
+    display: block;
+}
+.title__section > h5{
+    font-size: 1.2em;
+    font-weight: 380;
+}
+h2.__title{
+    font-size: 1.8em;
+    font-weight: 400;
+}
+h1.__price{
+    position: absolute;
+    right: 1em;
+    top: 0em;
+    font-size: 2.1em;
+    font-weight: 450;
+    float: right;
+}
+.details__section > div:first-child{
+    border: 1px solid black;
+}
+
+.virtualTour__section > div.box{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+div.box > h5{
+    position: absolute;
+    right: 1em;
+    font-size: 1.02em;
+    font-weight: 400;
+}
+.houseRules__section > ul{
+    list-style-type: square;
+}
+.rules__section{
+    border:1px solid black;
+    margin-top: 1em;
+    background-color: white;
+}
+@media screen and (max-width : 768px) {
+    h1.__price{
+        position: absolute;
+        right: 1em;
+        top: 0.05em;
+        float: right;
+    }
+}
+@media screen and (max-width : 768px) {
+    h1.__price{
+        float: none;
+        position: absolute;
+        left: 0;
+        top: 1em;
+        float: left; 
+    }
+    .title__section > span.accom__verified{
+        float: right;
+    }
+    .title__section > span.accom__type{
+        float: right;
+    }
+    .title__section > span.accom__brokerage{
+        visibility: hidden;
+    }
+    div.title__section{
+        height: 20vh;
+        margin-bottom: 5px;
+    }
+    div.title__section > h5{
+        position: absolute;
+        bottom: 0px;
+    }
+}

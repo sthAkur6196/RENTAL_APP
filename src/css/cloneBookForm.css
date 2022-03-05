@@ -1,0 +1,15 @@
+.book__form{
+    border: 1px solid black;
+    padding: 1em;
+    background-color: white;
+}
+.hidden__element{
+    visibility: hidden;
+}
+@media screen and (max-width : 768px) {
+    .book__form{
+        margin-top: 1em;
+        width: 100%;
+        
+    }
+}

@@ -1,0 +1,24 @@
+.signup__form{
+    border: 2px solid #ff7779;
+    border-radius: 1em;
+    color: #ff7779;
+    padding: 1em;
+    max-width: 60vw;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.form-group > button{
+    background-color: #ff7779;
+    color: white;
+    border: 1px solid white;
+}
+.form-group > button:hover{
+    background-color: white;
+    color: #ff7779;
+    border: 1px solid #ff7779;
+}
+@media screen and (min-width:768px) {
+    .signup__form{
+        max-width: 30vw;
+    }
+}

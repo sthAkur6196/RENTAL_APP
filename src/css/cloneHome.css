@@ -1,0 +1,22 @@
+.home__section{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.home__heading{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+}
+.home__heading > h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:600px) {
+    .home__section{
+        display: block;
+        margin-left: -1em;
+    }
+}

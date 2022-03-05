@@ -1,0 +1,42 @@
+div.form-div{
+    outline: 1.5px solid white;
+    border-radius: 10px;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(14,14,14);
+    padding-bottom: 0.5vw;
+    padding-top: 0.5vw;
+}
+div input.addinput{
+    border:none ;
+    outline: none;
+    background-color: rgb(14,14,14);
+    color: white;
+    width: 80%;
+    font-size: 150%;
+}
+button.add-btn{
+    background-color: rgb(14,14,14);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 3vw;
+}
+button.add-btn1{
+    background-color: rgb(14,14,14);
+    color: white;
+    border: none;
+    outline: 1px solid white;
+    border-radius: 5px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    float: right;
+    padding: 0.3vw;
+}
+div.list-item{
+    padding: 1vw 3vw;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin:1vw 6vw 1vw 0;
+}
