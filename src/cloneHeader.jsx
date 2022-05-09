@@ -1,22 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./cloneHeader.css";
-import "./cloneHeader.js";
+//import "./cloneScriptNav.js";
 import "bootstrap/js/src/collapse.js";
+import useScript from "./useScript";
 function CloneHeader(props){
+    const [show,setShow]=useState(false);
     const history=useHistory();
     const {user}=props;
     return(
+        <React.Fragment>
         <nav className="navbar-local">
             <div className="brand-title">
                 App Icon
             </div>
-            <a href="#" className="toggle-button">
+            <a className="toggle-button" onClick={()=>setShow(!show)}>
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
             </a>
-            <div className="navbar-links">
+            <div className={!show ? "navbar-links" : "navbar-links-mobile"}>
                 <ul>
                     <li><a href="#">Properties</a></li>
                     <li><a href="#">Rental Agreement</a></li>
@@ -25,6 +28,7 @@ function CloneHeader(props){
                 </ul>
             </div>
         </nav>
+        </React.Fragment>
         /*<nav className="navbar navbar-expand-sm"> 
                 <div className="container-fluid">
                 <a className="navbar-brand" onClick={()=>history.push("/home")}>App Icon</a>

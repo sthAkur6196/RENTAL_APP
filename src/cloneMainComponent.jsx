@@ -1,18 +1,18 @@
 import React,{Component} from "react";
-import { Switch,Route,Redirect } from "react-router-dom/cjs/react-router-dom.min";
+import { Switch , Route , Redirect } from "react-router-dom";
 import CloneExplorePage from "./cloneExplorePage";
-import CloneFooter from "./cloneFooter";
-import CloneHeader from "./cloneHeader";
-import CloneHome from "./cloneHome";
-import CloneLogin from "./cloneLogin";
-import CloneProperty from "./cloneProperty";
-import CloneSignup from "./cloneSignup";
+import CloneFooter from "./cloneFooter.jsx";
+import CloneHeader from "./cloneHeader.jsx";
+import CloneHome from "./cloneHome.jsx";
+import CloneLogin from "./cloneLogin.jsx";
+import CloneProperty from "./cloneProperty.jsx";
+import CloneSignup from "./cloneSignup.jsx";
 import "./css/mainComp.css"
 import auth from "./cloneAuthService.js";
-import CloneLogout from "./cloneLogout";
-import CloneThankyou from "./cloneThankyou";
-import CloneContact from "./cloneContact";
-import CloneRental from "./cloneRental";
+import CloneLogout from "./cloneLogout.jsx";
+import CloneThankyou from "./cloneThankyou.jsx";
+import CloneContact from "./cloneContact.jsx";
+import CloneRental from "./cloneRental.jsx";
 class CloneMainComponent extends Component{
     render(){
         let user=auth.getUser();
@@ -25,9 +25,9 @@ class CloneMainComponent extends Component{
                 <Route path="/property/:id" render={(props)=><CloneProperty {...props} />} />
                 <Route path="/explore" render={(props)=> <CloneExplorePage {...props} /> } />
                 <Route path="/home" component={CloneHome} />
-                <Route path="/thankyou" component={CloneThankyou} />
-                <Route path="/rental-agreement" component={CloneRental} />
-                <Route path="/contact" component={CloneContact} />
+                <Route path="/thankyou" render={(props)=><CloneThankyou {...props} />} />
+                <Route path="/rental-agreement" render={(props)=><CloneRental {...props} />} />
+                <Route path="/contact" render={(props)=><CloneContact {...props} />} />
                 <Redirect from="/" to="/home" />
             </Switch>
             <CloneFooter />

@@ -90,6 +90,20 @@ nav .navbar-collapse .collapse{
 .navbar-links li:hover{
     background-color: #f58e8e;
 }
+.navbar-links-mobile{
+    display: none;
+    animation: sampleAnimation 1s ease;
+}
+
+@keyframes sampleAnimation {
+    from{
+        display: none;
+    }    
+    to {
+        display: flex;
+    }
+}
+
 .toggle-button{
     position: absolute;
     top: 1.3rem;
@@ -110,16 +124,17 @@ nav .navbar-collapse .collapse{
 @media screen and (max-width:600px) {
     .toggle-button{
         display: flex;
+        cursor: pointer;
     }    
     .navbar-links{
         display: none;
-        width: 100%;
     }
     .navbar-local{
         flex-direction: column;
         align-items: flex-start;
     }
-    .navbar-links ul{
+
+    /*.navbar-links ul{
         flex-direction: column;
         width: 100%;
     }
@@ -129,5 +144,41 @@ nav .navbar-collapse .collapse{
     }
     .navbar-links.active{
         display: flex;
+    }*/
+    div.navbar-links-mobile{
+        display: flex;
+        width: 100%; 
+        animation: appear 1s forwards ease;
+    }
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    
+    .navbar-links-mobile ul{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar-links-mobile li{
+        list-style: none;
+    }
+    .navbar-links-mobile li a{
+        text-decoration: none;
+        display: block;
+        padding: .5rem 1rem;
+        color: white;
+        text-align: center;
+    }
+    .navbar-links-mobile li:hover{
+        background-color: #f58e8e;
     }
 }
